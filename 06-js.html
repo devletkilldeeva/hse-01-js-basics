@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Happy Birthday!</title>
+    <style media="screen">
+      p {
+        font-family: sans-serif;
+        color: #C04ABC;
+      }
+
+      p:nth-of-type(3) {
+        color: #FFDBB5;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let name = prompt("Как тебя зовут?")
+      let i = 0
+      while (i < 3) {
+        if (i === 2) {
+          document.write("<p>Happy Birthday, Dear " + name + "</p>")
+        } else {
+          ("<p>Happy Birthday to You,</p>")
+        }
+        document.write("<p>Happy Birthday to You,</p>")
+        i = i + 1
+      }
+      document.write("<p>Happy Birthday to You.</p>")
+
+    </script>
+  </body>
+</html>

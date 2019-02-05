@@ -1,11 +1,20 @@
-let nachalo = "Жили у бабуси два веселых гуся"
+let start = "Жили у бабуси два веселых гуся"
 let $end = "...один серый другой белый – два веселых гуся"
 
-let text = nachalo
+let text = start
 
-if (text === nachalo) {
-Alert($end)
+if (text === start) {
+ alert($end)
+} else {
+ alert(start)
 }
 
-else alert (nachalo)
+let discountCode = 985
+let simpsonsBestEpisode = "Broken Secret"
+let coffeePrice = 149.99
+
+if (coffeePrice <= 250) {
+ alert("Беру!")
+} else {
+ alert("Вот купон на скидку: " + discountCode)
 }
