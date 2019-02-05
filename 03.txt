@@ -1,10 +1,11 @@
 let nachalo = "Жили у бабуси два веселых гуся"
 let $end = "...один серый другой белый – два веселых гуся"
 
-let 1text = nachalo
+let text = nachalo
 
-if (1text === nachalo) {
+if (text === nachalo) {
 Alert($end)
-} else
-   alert (nachalo)
+}
+
+else alert (nachalo)
 }
