@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Волшебные печеньки</title>
+    <style media="screen">
+      img {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img onclick="tellFuture()" src="cookie.png" alt="cookie">
+    <h1 id="phrase">Нажми на печеньку, чтобы узнать будущее</h1>
+    <script>
+      let phrase = document.getElementById("phrase")
+      function tellFuture() {
+        let start = ["Однажды", "Грядет пора перемен –", "Еще немного и"]
+        let mid = ["ты станешь дизайнить", "ты научишься кодить", "ты бросишь все и будешь делать"]
+        let end = ["печеньки", "игры для тостеров", "ночные горшки"]
+        let randomStart = start[Math.floor(Math.random() * start.lendth)]
+        let randomMid = start[Math.floor(Math.random() * mid.lendth)]
+        let randomEnd = start[Math.floor(Math.random() * end.lendth)]
+        $phrase.textContent = randomStart + " " + randomMid + " " + randomEnd
+        $phrase.textContent 
+      }
+    </script>
+  </body>
+</html>
